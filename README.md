@@ -28,12 +28,19 @@ In order to have the data in a format usable to this model, I had to **compress*
 
 
 ## Final Model:
-For the final model, I tried different combinations of layers, including **dropout** layers, **L2 regularization**, **early stopping**,  and increasing/decreasing the number of **epochs**. The only thing that made any real difference was increasing the **batch size**. The architecture for the final model was 2 **LSTM** layers, 3 **Dense** layers, **batch size** of 20 and 100 **epochs**. Compared to the Test Model, I was able to lower the **Test Mean Absolute Percentage Error** by **250%**. The **Training Mean Absolute Percentage Error** is **5.68%** and the RMSE is **48.41**. The final Model is off by an average of **$48.41** on a stock that's currently trading at **$671**.
+For the final model, I tried different combinations of layers, including:
+- **Dropout** layers.
+- **L2 regularization**.
+- **Early stopping**.
+- Increasing/decreasing the number of **epochs**.
+- Increasing the **batch size**.
+
+The architecture for the final model was 2 **LSTM** layers, 3 **Dense** layers, **batch size** of 20 and 100 **epochs**. Compared to the Test Model, I was able to lower the **Test Mean Absolute Percentage Error** by **250%**. The **Training Mean Absolute Percentage Error** is **5.68%** and the RMSE is **48.41**. The final Model is off by an average of **$48.41** on a stock that's currently trading at **$671**.
 
 ![alt text](https://raw.githubusercontent.com/Eduardoosorio23/Capstone/main/Data/Pictures/Final%20model%20results.png?token=APSW5OCS6DPN4DF2DCFELYDASL3BY)
 
 ![alt text](https://raw.githubusercontent.com/Eduardoosorio23/Capstone/main/Data/Pictures/Final%20Model%20graph.png?token=APSW5OFSQKFEI52PQNLIVPTASL3EA)
 
-## Summery/Conclusion
+## Summary /Conclusion
 - LSTM’s work very well on forecasting time series data.
 - Sentiment can signal if there's going to be a significant decrease or increase in the near future.
