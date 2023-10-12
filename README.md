@@ -7,7 +7,7 @@ The purpose of this study was to compare stock prices with sentiment towards sai
 ##The data:
 The dataset was synthesized using **Psaw** for reddit post and **Twint** for twitter posts. The ticker symbol used to train this model was **TSLA(Tesla)** and I was able to extract 7k+ reddit/twitter posts. I used **SpaCy** which is a **Natural Language Processing** tool to essentially teach the model how to read textual data. I also used **SpaCy's TextBlob pipeline component** to find post **sentiment** and **subjectivity**. **Sentiment** is measured from 1 to -1, 1 being positive -1 being negative. **Subjectivity** is measured from 1 to 0, 1 being highly opinionated and 0 being very factual.
 
-Here is an example oh how the model reads a post:
+Here is an example of how the model reads a post:
 ![alt text](https://raw.githubusercontent.com/Eduardoosorio23/Capstone/main/Data/Pictures/displaCy%20PoS%20Tagging2.png?token=APSW5OH4PFACGX4SGT6PE53ASL3KW)
 
 ## EDA:
